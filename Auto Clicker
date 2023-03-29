@@ -1,0 +1,37 @@
+for i,v in next, game.CoreGui:GetChildren() do
+   if v.Name == "ScreenGui" and v:FindFirstChild("ImageButton") then
+       v:Destroy()
+   end
+end
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/LiarFate/Auto-Clicker-Source-Code/main/AutoClickerSource?token=GHSAT0AAAAAACAXVPRH6RUN6ELK5LLRA6NYZBEK4BQ", true))()
+local Main = Library:CreateWindow"UwU"
+
+local wr = Main:AddToggle({text = "Auto Click Status", state = false, callback = function()
+end})
+
+Main:AddBind({text = "Auto Click", key = "E", callback = function()
+   if getgenv().click == true then
+       getgenv().click = false
+   else getgenv().click = true
+end
+end})
+
+Main:AddLabel({text = "I Wanna Be Doggy"})
+
+Main:AddBind({text = "Toggle UI", key = "RightControl", callback = function()
+   Library:Close()
+end})
+
+spawn(function()
+   while wait() do
+       if click then
+           mouse1click()
+           wr:SetState(true)
+       elseif click == false then
+            wr:SetState(false)
+       end
+   end
+end)
+
+Library:Init()
