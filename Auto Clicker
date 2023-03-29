@@ -4,7 +4,7 @@ for i,v in next, game.CoreGui:GetChildren() do
    end
 end
 
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/LiarFate/Auto-Clicker-Source-Code/main/AutoClickerSource?token=GHSAT0AAAAAACAXVPRH6RUN6ELK5LLRA6NYZBEK4BQ", true))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/LiarFate/Auto-Clicker-Source-Code/main/AutoClickerSource", true))()
 local Main = Library:CreateWindow"UwU"
 
 local wr = Main:AddToggle({text = "Auto Click Status", state = false, callback = function()
