@@ -10,7 +10,7 @@ local Main = Library:CreateWindow"UwU"
 local wr = Main:AddToggle({text = "Auto Click Status", state = false, callback = function()
 end})
 
-Main:AddBind({text = "Auto Click", key = "F", callback = function()
+Main:AddBind({text = "Auto Click", key = "E", callback = function()
    if getgenv().click == true then
        getgenv().click = false
    else getgenv().click = true
