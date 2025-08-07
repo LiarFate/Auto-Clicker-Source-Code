@@ -24,7 +24,7 @@ end
 
 --// UI Library \\--
 local Library = loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/x2Swiftz/UI-Library/refs/heads/main/Libraries/uwuware%20(wally)%20-%20Library.lua'))()
-local Window = Library:CreateWindow("AutoClicker by I Wanna Be Doggy")
+local Window = Library:CreateWindow("AutoClicker by LF")
 Enabled_1 = Window:AddColor({
     text = 'Status:',
     flag = "Ezpi_1",
