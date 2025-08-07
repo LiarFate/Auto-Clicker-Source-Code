@@ -23,7 +23,7 @@ if not pcall(function() return syn.protect_gui end) then
 end
 
 --// UI Library \\--
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/polar"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/x2Swiftz/UI-Library/refs/heads/main/Libraries/uwuware%20(wally)%20-%20Library.lua"))()
 local Window = Library:CreateWindow("AutoClicker by I Wanna Be Doggy")
 Enabled_1 = Window:AddColor({
     text = 'Status:',
